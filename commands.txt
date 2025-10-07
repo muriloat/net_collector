@@ -1,0 +1,12 @@
+terminal length 0
+show version
+show running-config
+clear interface {{intA}}
+show interface {{intA}}
+!WAIT 2
+show interface {{intA}}
+!SUBSESSION ping_probe
+show interface {{intA}}
+!WAIT 2
+show interface {{intA}}
+

@@ -1,0 +1,29 @@
+{
+  "globals": {
+    "port": 23,
+    "username": "userX",
+    "password": "passX",
+    "enable_password": null,
+    "prompt": null,
+    "lock_ttl_seconds": 1800,
+    "max_retries": 3,
+    "subsessions": {
+      "ping_probe": [
+        "ping 192.168.10.5 repeat 5",
+        "show ip route"
+      ]
+    }
+  },
+  "devices": [
+    {
+      "destIP": "192.168.10.2",
+      "intA": "gi1/0/8"
+    },
+    {
+      "destIP": "10.2.66.3",
+      "intA": "xe2/1/12",
+      "username": "special",
+      "password": "specpw"
+    }
+  ]
+}
